@@ -1,9 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import reactLogo from '../assets/images/react.svg'
+import './App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
+// what syntax for install node-sass version that compatible with node 16 ? 
+
+  const handleClick = () => {
+    setCount(count + 1)
+  }
 
   return (
     <div className="App">
@@ -17,7 +22,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={handleClick}>
           count is {count}
         </button>
         <p>
