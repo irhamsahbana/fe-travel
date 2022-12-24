@@ -13,12 +13,11 @@ const Login = () => {
     e.preventDefault()
 
     try {
-      const response = await axiosInstance.post(Endpoint.getLogin(), credentials)
+      const response = await axiosInstance.post(Endpoint.login(), credentials)
       const data = response?.data?.data
       const token = data?.token
       !!token ? localStorage.setItem('x_travel', token) : null
     } catch (error) {
-      console.log('error', error?.response)
     }
   }
 

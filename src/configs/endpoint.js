@@ -1,8 +1,8 @@
 class Endpoint {
-  static getLogin = () => 'auth/login'
-  static getMe = () => 'me'
-  static getLogout = () => 'auth/logout'
-  static getLogoutAll = () => 'auth/logout-all-devices'
+  static login = () => 'auth/login'
+  static me = () => 'me'
+  static logout = () => 'auth/logout'
+  static logoutAll = () => 'auth/logout-all-devices'
 }
 
 export default Endpoint
